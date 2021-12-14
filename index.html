@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p4_gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+   <style>
+          *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 32px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    a{
+        text-decoration: none;
+        font-family: var(--Roboto);
+        text-transform: uppercase;
+        margin-inline: 0.7em;
+        color: blue
+    }
+        :root{
+        --b_oscur: #264653;
+        --b_clar: #2A9D8F;
+        --groc: #E9C46A;
+        --t_clar: #F4A261;
+        --t_oscur: #E76F51;
+        --g_clar: #F5F5F5;
+        --g_oscur: #E0E0E0;
+        --Roboto: 'Roboto', sans-serif;
+        --Merriweather:'Merriweather', serif;
+        --negrita: 700;
+         }
+         .container{
+        padding: 0 2em;
+        flex-direction: column;
+    }
+    body>header{
+        display: flex;
+        padding: 100px 250px;
+        text-align: center;
+        height: 100vh;
+        background-color: var(--g_clar);
+        flex-direction: column;
+        justify-content: center;
+    }
+    #Portadas{
+        background-color: var(--g_oscur);
+    }
+    #Plataformas{
+        background-color: var(--b_clar);
+    }
+    #Redessociales{
+        background-color: var(--g_oscur);
+    }
+    h1{
+        font-family: var(--Roboto);
+        font-size: 1.7em;
+        font-weight: var(--negrita);
+        color: var(--b_oscur);
+        margin-bottom: 0.3em;
+        justify-content: center;
+    }
+    h2{
+        font-size: 1.1em;
+        font-family: var(--Merriweather);
+        color: var(--b_clar);
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 10em;
+    }
+    h3{
+        font-family: var(--Roboto);
+        padding: 0 2em;
+        margin-bottom: 0.2em;
+    }
+    h4{
+        font-size: o.5em;
+        font-family: var(--Merriweather);
+    }
+    h5{
+        font-size: 0.5em;
+        font-family: var(--Merriweather);
+        padding: 0 4.8em;
+    }
+    Blockquote{
+        font-size: 0.45em;
+        font-family: var(--Roboto);
+        padding: 0 1.8em;
+    }
+    nav a{
+        font-size: 0.75em;
+    }
+    section:first-child{
+        height: 100%;
+        background-color: var(--g_oscur);
+        color: var(--b_oscur);
+    }
+    section:first-child .container{
+        display: flex;
+    }
+    /*Portadas*/
+    .cover{
+        padding: 1.2em;
+        margin: 0.5em;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        min-width: 200px;
+        width: 400px;
+        max-height: 450px;
+        flex-grow: 1;
+        background-color: var(--b_clar);
+    }
+    .cover img{
+        width: 100%;
+        height: 200px;
+        display: flex;
+    }
+    .cover img img{
+        object-fit: cover;
+        object-position: center;
+    }
+    .cover header h4{
+        font-family: var(--Merriweather);
+        font-size: 0.5em;
+        color: var(--b_oscur);
+    }
+    .cover header{
+        width: 100%;
+        background-color: var(--g_oscur);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+        .cover h3{
+            padding: 0.5em;
+            font-family: var(--Merriweather);
+            color: var(--b_oscur);
+        }
+        section:last-child{
+            height: 80vh;
+            color: var(--b_oscur);
+            background-color: var(--b_clar);
+        }
+        footer{
+            height: 50vh;
+            color: var(--g_oscur);
+            background-color: var(--b_oscur);
+        }
+        .grupo1{
+            display: flex;
+            flex-direction: column;
+        }
+        .grupo2{
+            display: flex;
+            flex-direction: column;
+        }
+        /*Plataformas*/
+        .plataformas{
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--b_oscur)0px 0px 10px 0px;
+            width: 300px;
+            height: 400px;
+            margin: 1em;
+            align-items: center;
+        }
+        .plataformas_img{
+            width: 200px;
+            height: 200px;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        .plataformas h4, blockquote{
+            text-align: center;
+            margin: 0.5em;
+        }
+        .plataformas_img img{
+            border-radius: 200px;
+            object-fit: cover;
+            height: 100%;
+        }
+        .containerp{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+   </style>
+</head>
+<body>
+    <header>
+        <div class="container2">
+            <hgroup>
+                <h1>
+                    Portadas de discos
+                </h1>
+                <h2>
+                    Colección de discos que más me gustan
+                </h2>
+            </hgroup>
+            <nav>
+                <a href="#Portadas">Portadas</a>
+                <a href="#Plataformas">Plataformas</a>
+                <a href="#Redessociales">Redes Sociales</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="#Portadas">
+            <h3>Portadas</h3>
+            <div class="container">
+                <div class="grupo1">
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/shawn mendes.jpg" alt="">
+            </div>
+            <header>
+                <h4>Shawn Mendes</h4>
+            </header>
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/martin garrix.jpg" alt="">
+            </div>
+            <header>
+                <h4>Martin garrix</h4>
+            </header>
+            </div>
+            <div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/martin harris.jpg" alt="">
+            </div>
+            <header>
+                <h4>Martin harris</h4>
+            </header>
+            </div>
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/lérica.jpg" alt="">
+                </div>
+                <header>lérica</header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/alavaro de luna.jpg" alt="">
+                </div>
+                <header>
+                    <h4>Álvaro de luna</h4>
+                </header>
+                </div>
+                <div class="grupo2">
+                    <div class="container">
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/samantha.jpg" alt="">
+                </div>
+                <header>
+                    <h4>samantha</h4>
+                </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/alvaro soler.jpg" alt="">
+                </div>
+                <header>
+                    <h4>Alvaro Soler</h4>
+                </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/aitana.jpg" alt="">
+                </div>
+                <header>
+                    <h4>aitana</h4>
+                </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/flavio.jpg" alt="">
+                </div>
+                <header>
+                    <h4>flavio</h4>
+                </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/harry styles.jpg" alt="">
+                </div>
+                <header>
+                    <h4>Harry styles</h4>
+                </header>
+                </div>
+                </div>
+                </div>
+        </section>
+        <section id="#Plataformas">
+            <h3>Plataformas</h3>
+            <div class="containerp">
+                <div class="plataformas">
+                    <div class="plataformas_img"></div>
+                    <img src="img/plataformas/Apple Music.png" alt="">
+            </div>
+            <header>
+                <h4>Apple Music</h4>
+                <blockquote>
+                    Es el servicio de música en streaming de Apple
+                </blockquote>
+            </header>
+            </div>
+            <div class="plataformas">
+                <div class="plataformas_img"></div>
+                <img src="img/plataformas/Spotify.png" alt="">
+            </div>
+            <header>
+                <h4>Spotify</h4>
+                <blockquote>
+                    Es un servicio digital de música, pódcasts y vídeos que te da acceso a millones de canciones y a otro contenido de creadores de todo el mundo.
+                </blockquote>
+            </header>
+        </div>
+        <div class="plataformas">
+            <div class="plataformas_img">
+                <img src="img/plataformas/youtube.png" alt="">
+        </div>
+        <header>
+            <h4>youtube</h4>
+            <blockquote>
+             Es un portal de internet que permite a sus usuarios subir y visualizar videos   
+            </blockquote>
+        </header>
+        </div>
+        </div>
+        </section>
+    </main>
+    <footer id="#Redessociales">
+        <div class="container2">
+            <h3>Redes Sociales</h3>
+            <h5><a href="#">twitter</a></h5>
+            <h5><a href="#">instagram</a></h5>
+            <h5><a href="#">facebook</a></h5>
+        </div>
+    </footer>
+</body>
+</html>
